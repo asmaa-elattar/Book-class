@@ -42,7 +42,7 @@ public:
         cout << "Price: $" << price << endl;
     }
     void applyDiscount(float percent) {
-        float discount = price*(percent / 100);
+        price -= price*(percent / 100);
         cout << "Discount of " << percent << "% applied. New price: $" << price << endl;
     }
     static void showBookCount() {
@@ -61,5 +61,6 @@ int main() {
     Book::showBookCount();
     return 0;
 }
+
 
 
