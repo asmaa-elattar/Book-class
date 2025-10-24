@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 class Book {
 private:
     string title;
@@ -43,7 +42,7 @@ public:
         cout << "Price: $" << price << endl;
     }
     void applyDiscount(float percent) {
-        price -= price * (percent / 100);
+        float discount = price*(percent / 100);
         cout << "Discount of " << percent << "% applied. New price: $" << price << endl;
     }
     static void showBookCount() {
@@ -63,3 +62,4 @@ int main() {
 
     return 0;
 }
+
