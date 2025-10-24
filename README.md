@@ -9,7 +9,8 @@ and keeps track of the total number of books created.
 This project shows how to:
 - Create a Book class with:
   - Title  
-  - Author  
+  - Author
+  - pages 
   - Price  
   - Static variable to count the number of books
 - Display book details using showInfo()
